@@ -1,0 +1,60 @@
+\documentclass{beamer}
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{wrapfig}
+
+%Tema:
+\usetheme{Madrid}
+\usecolortheme{beaver}
+
+%Footline:
+\makeatother
+\setbeamertemplate{footline}
+{
+  \leavevmode%
+  \hbox{%
+  \begin{beamercolorbox}[wd=.3\paperwidth,ht=2.25ex,dp=1ex,center]{author in head/foot} Título pie de página
+  \end{beamercolorbox}
+  
+  \begin{beamercolorbox}[wd=.7\paperwidth,ht=2.25ex,dp=1ex,center]{title in head/foot} \secname
+  \end{beamercolorbox}
+  }
+}
+\makeatletter
+\setbeamertemplate{navigation symbols}{}
+
+%Información del documento:
+\title{Título}
+\author{Fernando Fêtis Riquelme}
+\date{Curso\\Semestre, 202x.}
+
+%Estructuras:
+\newtheorem{teo}{Teorema}[section]
+\newtheorem{defi}{Definición}[section]
+
+\begin{document}
+
+\frame{\titlepage}
+
+%Sección.
+\section{Sección}
+
+
+%Primer frame.
+\begin{frame}{Título frame}
+
+\begin{block}{Título}
+Contenido
+\end{block}
+
+\begin{exampleblock}{Título}
+Contenido
+\end{exampleblock}
+
+\begin{alertblock}{Título}
+Contenido
+\end{alertblock}
+
+\end{frame}
+
+\end{document}

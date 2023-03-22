@@ -1,0 +1,50 @@
+\documentclass{article}
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{amssymb,amsmath,amsthm}
+\usepackage{geometry}
+\usepackage{enumerate}
+
+%Estructuras:
+\theoremstyle{definition}
+\newtheorem{defi}{Definición}
+\newtheorem{teo}{Teorema}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+
+%Configuración de la página:
+\geometry{letterpaper,margin=2cm,tmargin=3cm}
+
+\fancypagestyle{plain}{
+	\fancyhead[L]{Universidad de Chile\\Facultad de Ciencias Físicas y Matemáticas\\MA0000 Nombre curso}
+	\fancyhead[R]{\includegraphics[height=1.5cm]{dim.pdf}}
+}
+\pagestyle{fancy}{
+\fancyhead[L]{Facultad de Ciencias Físicas y Matemáticas}
+\fancyhead[R]{Universidad de Chile}
+}
+
+%Título:
+\title{\bfseries{Auxiliar nºX}}
+\author{\textbf{Profesor:} Nombre profesor.\\
+	\textbf{Auxiliares:} Nombre auxiliares.}
+\date{\small{Primavera, 2019.}}
+\begin{document}
+\maketitle
+
+%Resumen:
+\section*{Resumen}
+\begin{defi}[concepto]
+	Definición.
+\end{defi}
+
+
+%Problemas:
+\section*{Problemas}
+\begin{enumerate}[{\bf P1.}]
+    \item Primera pregunta.
+    \item Segunda pregunta.
+\end{enumerate}
+\end{document}

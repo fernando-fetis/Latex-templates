@@ -1,0 +1,56 @@
+\documentclass{article}
+\usepackage[spanish]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{geometry}
+
+%Información del documento:
+\newcommand{\departamento}{Departamento de Ingeniería Matemática}
+\newcommand{\titulo}{Título del informe}
+\newcommand{\curso}{MA0000 Nombre del curso}
+\newcommand{\autor}{Fernando Fêtis Riquelme}
+\newcommand{\fecha}{\today}
+
+%Configuración de página:
+\geometry{letterpaper,margin=2.5cm,tmargin=3.5cm}
+\fancyhead[L]{\curso}
+\fancyhead[R]{\titulo}
+\pagestyle{fancy}
+
+\begin{document}
+
+%Portada:
+\begin{titlepage}
+	\centering
+	\includegraphics[width=0.5\textwidth]{uchile}\\
+	\begin{Large}
+		\begin{scshape}
+			Facultad de Ciencias Fí­sicas y Matemáticas\\
+			\departamento\\
+			\vspace{2.5cm}\Huge\titulo\\
+		\end{scshape}
+		\vspace{0.5cm}\curso\\
+		\vspace{4cm}\autor
+	\end{Large}
+	\vfill\fecha
+\end{titlepage}
+
+%Documento:
+
+\tableofcontents
+\newpage
+
+\section{Primera sección}
+\subsection{Primera subsección}
+
+Cita a la referencia 1: \cite{ref_name}.
+
+
+\newpage
+\begin{thebibliography}{0}
+  \bibitem{ref_name} Referencia.
+\end{thebibliography}
+
+\end{document}
